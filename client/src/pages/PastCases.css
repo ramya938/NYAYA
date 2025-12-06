@@ -1,0 +1,189 @@
+/* ================================
+   PAST CASES PAGE MAIN CONTAINER
+================================ */
+
+.cases-container {
+  margin-left: 260px; /* Align with sidebar */
+  padding: 40px 30px;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: #f4f7fb;
+  box-sizing: border-box;
+}
+
+/* Page Title */
+.cases-title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #0d47a1;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Search Bar */
+.search-box {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 25px;
+  border: 1.5px solid #b0bec5;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #f1f5f9;
+  outline: none;
+}
+
+/* Case Grid */
+.cases-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* Individual Case Card */
+.case-card {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid #d0d7df;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.case-card:hover {
+  background: #e3f2fd;
+  transform: translateY(-5px);
+}
+
+.case-card h3 {
+  font-size: 19px;
+  font-weight: 600;
+  color: #0d47a1;
+}
+
+.case-card p {
+  color: #37474f;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* ================================
+   POPUP STYLING
+================================ */
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  backdrop-filter: blur(3px);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  width: 90%;
+  max-width: 650px;
+  background: white;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease;
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.year-text {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #0d47a1;
+}
+
+.description {
+  margin-bottom: 20px;
+  color: #37474f;
+}
+
+.related-title {
+  color: #0d47a1;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.related-list li {
+  margin-left: 20px;
+  margin-bottom: 6px;
+  color: #37474f;
+}
+
+.close-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  background: #0d47a1;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.close-btn:hover {
+  background: #1565c0;
+}
+
+/* Popup Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* ================================
+   🌙 DARK MODE
+================================ */
+
+body.dark .cases-container {
+  background: #0e1117 !important;
+}
+
+body.dark .cases-title {
+  color: #93c5fd !important;
+}
+
+body.dark .search-box {
+  background: #1f2937 !important;
+  color: #e5e7eb !important;
+  border: 1px solid #374151 !important;
+}
+
+body.dark .search-box::placeholder {
+  color: #9ca3af !important;
+}
+
+body.dark .case-card {
+  background: #1f2937 !important;
+  border: 1px solid #374151 !important;
+  color: #e5e7eb !important;
+}
+
+body.dark .case-card:hover {
+  background: #374151 !important;
+}
+
+body.dark .popup-content {
+  background: #1f2937 !important;
+  color: #e5e7eb !important;
+  border: 1px solid #374151 !important;
+}
+
+body.dark .related-title {
+  color: #60a5fa !important;
+}
+
+body.dark .close-btn {
+  background: #2563eb !important;
+}

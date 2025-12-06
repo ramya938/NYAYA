@@ -1,0 +1,228 @@
+/* ===========================================
+   PAGE WRAPPER (Fix white space & alignment)
+=========================================== */
+/* Center the whole chatbot page */
+.chatbot-page {
+  margin-left: 260px;     /* sidebar width */
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  justify-content: center;   /* horizontally center */
+  align-items: flex-start;   /* top alignment */
+  background: var(--content-bg);
+}
+
+
+/* ===========================================
+   MAIN CHAT CONTAINER
+=========================================== */
+.chat-container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Arial;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* Dark mode container */
+body.dark .chat-container {
+  background: #1f2937 !important;
+  color: #e5e7eb !important;
+  box-shadow: 0px 4px 20px rgba(255,255,255,0.05);
+}
+
+/* ===========================================
+   TITLE
+=========================================== */
+.chat-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #0d47a1;
+}
+
+body.dark .chat-title {
+  color: #93c5fd !important;
+}
+
+/* ===========================================
+   CHAT BOX
+=========================================== */
+.chat-box {
+  height: 430px;
+  border: 2px solid #ddd;
+  padding: 10px;
+  overflow-y: auto;
+  border-radius: 10px;
+  background: #f1f8ff;
+}
+
+/* Dark mode chat box */
+body.dark .chat-box {
+  background: #111827 !important;
+  border: 1px solid #374151 !important;
+}
+
+/* USER MESSAGE */
+.user-msg {
+  text-align: right;
+  background: #bbdefb;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 12px;
+  max-width: 80%;
+  display: inline-block;
+}
+
+/* Dark mode user msg */
+body.dark .user-msg {
+  background: #2563eb !important;
+  color: white !important;
+}
+
+/* AI MESSAGE */
+.ai-msg {
+  text-align: left;
+  background: #e8eaf6;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 12px;
+  max-width: 80%;
+  display: inline-block;
+}
+
+/* Dark AI message */
+body.dark .ai-msg {
+  background: #374151 !important;
+  color: #e5e7eb !important;
+}
+
+/* Typing indicator */
+.typing {
+  font-style: italic;
+  opacity: 0.7;
+}
+
+/* ===========================================
+   INPUT + BUTTONS
+=========================================== */
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Input field */
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #90caf9;
+  background: #f0f7ff;
+}
+
+/* Dark mode input */
+body.dark input {
+  background: #1f2937 !important;
+  border: 1px solid #374151 !important;
+  color: #e5e7eb !important;
+}
+
+body.dark input::placeholder {
+  color: #9ca3af !important;
+}
+
+/* SEND Button */
+button {
+  padding: 12px 18px;
+  background: #0d47a1;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1565c0;
+}
+
+/* Dark mode buttons */
+body.dark button {
+  background: #2563eb !important;
+}
+
+body.dark button:hover {
+  background: #1d4ed8 !important;
+}
+
+/* ===========================================
+   BACK BUTTON
+=========================================== */
+.back-btn {
+  background: #bbdefb;
+  color: #0d47a1;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Dark mode back button */
+body.dark .back-btn {
+  background: #1f2937 !important;
+  color: #e5e7eb !important;
+  border: 1px solid #374151;
+}
+
+/* ===========================================
+   MIC BUTTON
+=========================================== */
+.mic-btn {
+  background: #ff6f00;
+  color: white;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.mic-btn:hover {
+  background: #ff8f00;
+}
+
+/* Dark mic button */
+body.dark .mic-btn {
+  background: #ea580c !important;
+}
+
+/* ===========================================
+   VOICE TOGGLE BUTTON
+=========================================== */
+.voice-toggle {
+  background: #0d47a1;
+  color: white !important;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 12px;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.voice-toggle:hover {
+  background: #1565c0;
+}
+
+/* Dark mode */
+body.dark .voice-toggle {
+  background: #2563eb !important;
+  color: white !important;
+}

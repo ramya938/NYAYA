@@ -1,0 +1,223 @@
+/* ==========================================
+   PROFILE PAGE MAIN WRAPPER
+========================================== */
+
+.profile-page {
+  margin-left: 260px; /* align after sidebar */
+  min-height: 100vh;
+  background: #eef3f8;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 50px;
+  transition: 0.3s ease;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.profile-header-noicon {
+  width: 100%;
+  padding: 35px;
+  background: linear-gradient(to right, #0d47a1, #1976d2);
+  text-align: center;
+  color: white;
+}
+
+.profile-title {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* ==========================================
+   PROFILE CARD
+========================================== */
+
+.profile-card {
+  background: white;
+  width: 90%;
+  max-width: 550px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.12);
+  animation: fadeIn 0.5s ease;
+  transition: 0.3s ease;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  color: #0d47a1;
+  border-bottom: 2px solid #e3eaf2;
+  padding-bottom: 10px;
+}
+
+/* ==========================================
+   EACH ROW OF PROFILE INFO
+========================================== */
+
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+}
+
+.value {
+  font-size: 16px;
+  color: #444;
+  font-weight: 500;
+}
+
+/* ==========================================
+   INPUTS FOR EDIT MODE
+========================================== */
+
+.profile-input {
+  width: 55%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #bcd0e0;
+  font-size: 15px;
+}
+
+.profile-input:focus {
+  border-color: #1976d2;
+  outline: none;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.edit-btn,
+.save-btn,
+.cancel-btn,
+.logout-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  margin-top: 18px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Edit */
+.edit-btn {
+  background: #1565c0;
+}
+.edit-btn:hover {
+  background: #0d47a1;
+}
+
+/* Save */
+.save-btn {
+  background: #2e7d32;
+}
+.save-btn:hover {
+  background: #1b5e20;
+}
+
+/* Cancel */
+.cancel-btn {
+  background: #757575;
+}
+.cancel-btn:hover {
+  background: #616161;
+}
+
+/* Logout */
+.logout-btn {
+  background: #d32f2f;
+}
+.logout-btn:hover {
+  background: #b71c1c;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================
+   🌙 DARK MODE
+========================================== */
+
+body.dark .profile-page {
+  background: #0e1117 !important;
+}
+
+body.dark .profile-header-noicon {
+  background: linear-gradient(to right, #0a2d6c, #114d9b) !important;
+}
+
+body.dark .profile-title {
+  color: #e8f1ff !important;
+}
+
+body.dark .profile-card {
+  background: #1f2937 !important;
+  border: 1px solid #374151 !important;
+  color: #e5e7eb !important;
+  box-shadow: none !important;
+}
+
+body.dark .section-title {
+  color: #60a5fa !important;
+  border-bottom: 2px solid #2d3b4c !important;
+}
+
+body.dark .profile-row {
+  border-bottom: 1px solid #2d3748 !important;
+}
+
+body.dark .label {
+  color: #cbd5e1 !important;
+}
+
+body.dark .value {
+  color: #9ca3af !important;
+}
+
+body.dark .profile-input {
+  background: #111827 !important;
+  border: 1px solid #374151 !important;
+  color: #e5e7eb !important;
+}
+
+body.dark .edit-btn {
+  background: #2563eb !important;
+}
+
+body.dark .save-btn {
+  background: #15803d !important;
+}
+
+body.dark .cancel-btn {
+  background: #525252 !important;
+}
+
+body.dark .logout-btn {
+  background: #b91c1c !important;
+}

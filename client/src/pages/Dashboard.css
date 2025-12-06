@@ -1,0 +1,35 @@
+.dashboard-container {
+  padding: 20px;
+}
+
+.stats-grid {
+  margin-top: 20px;
+}
+
+
+h2 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.stat-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+  background: #e8f0ff;
+}

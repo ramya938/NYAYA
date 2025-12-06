@@ -1,0 +1,87 @@
+/* ===========================================
+   THEME VARIABLES
+=========================================== */
+
+/* Light mode */
+:root {
+  --content-bg: #f4f7fb;
+}
+
+/* Dark mode activated */
+body.dark {
+  --content-bg: #0e1117;
+}
+
+/* ===========================================
+   LAYOUT WRAPPER
+=========================================== */
+
+.layout-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background: var(--content-bg);
+  transition: 0.3s ease;
+}
+
+/* Sidebar fixed width */
+.sidebar {
+  width: 260px !important;
+}
+
+/* Main content section (CENTER AREA) */
+..layout-content {
+  margin-left: 260px;
+  padding: 30px;
+  width: calc(100% - 260px);
+  min-height: 100vh;
+  background: var(--content-bg);
+  transition: 0.3s ease;
+  box-sizing: border-box;
+}
+
+
+/* ===========================================
+   DARK MODE SIDEBAR
+=========================================== */
+
+body.dark .sidebar {
+  background: #111827 !important;
+  color: white !important;
+}
+
+body.dark .sidebar a {
+  color: #e5e7eb !important;
+}
+
+body.dark .sidebar a:hover {
+  background: #1f2937 !important;
+}
+
+/* ===========================================
+   DARK MODE TOGGLE BUTTON
+=========================================== */
+
+.dark-toggle-btn {
+  margin-bottom: 15px;
+  padding: 10px 14px;
+  background: #1565c0;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dark-toggle-btn:hover {
+  background: #0d47a1;
+}
+
+/* Dark Mode Toggle Button Styling */
+body.dark .dark-toggle-btn {
+  background: #2563eb !important;
+}
+
+body.dark .dark-toggle-btn:hover {
+  background: #1d4ed8 !important;
+}
